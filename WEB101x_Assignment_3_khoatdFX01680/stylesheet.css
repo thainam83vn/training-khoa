@@ -17,6 +17,11 @@
     width: 100%;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 .nav {
     display: flex;
     max-width: 100%;
@@ -33,7 +38,7 @@
     text-transform: uppercase;
     font-size: 5px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    padding: 0 25px 0 0;
+    padding: 0 35px 0 0;
 }
 
 .nav li a {
@@ -70,6 +75,10 @@ hr {
 
 .place {
     margin: 0 0 0 10px;
+}
+
+.place img {
+    padding: 5px 0 5px 0;
 }
 
 #bottomcontent{
@@ -116,28 +125,36 @@ hr {
       .col-s-11 {width: 91.66%;}
       .col-s-12 {width: 100%;}
 
+
     .nav {
-        display: flex;
-        max-width: 100%;
+        display: inline-block;
+        width: 100%;
         background-color: grey;
+        margin: 0;
     }
-    
+
     .nav ul {
         list-style-type: none;
     }
     
     .nav li {
-        display: inline-block;
-        position: relative;
+        display: inline;
         text-transform: uppercase;
         font-size: 10px;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
-        padding: 0 40px 0 0;
+        padding: 0 5px 0 0;
     }
     
     .nav li a {
         text-decoration: none;
-        color: white;
+        color: black;
+    }
+
+    .navright {
+        float: right;
+        position: relative;
+        padding: 4px 5px 0 0;
+        right: 30px;
     }
 
     .banner {
@@ -153,7 +170,7 @@ hr {
         margin: 0 15px 0 15px;
     }
     
-    #middlecontent img {
+    #middlecontent {
         max-width: 100%;
         height: auto;
     }
@@ -166,14 +183,37 @@ hr {
     .middleline p {
         font-size: 13px;
     }
-    
+
     .place {
-        margin: 0 0 0 15px; 
+        position: relative;
+        top: 2.5%;
+        left: 2.5%;
+        /*
+        width: 1198px;
+        */
+        display: grid;
+        grid-template-columns: repeat(2, 360px);
+        column-gap: 20px;
+        grid-template-rows: repeat(2, 360px);
+        row-gap: 10px;
+        margin: 0;
+    }
+
+    .placecol1 {
+        display: grid;
+        grid-template-rows: repeat(2, 170px);
+        grid-row-gap: 15px;
+    }
+
+    .placecol2 {
+        display: grid;
+        grid-template-rows: repeat(2, 170px);
+        grid-row-gap: 15px;
     }
     
     #bottomcontent{
         display: block;
-        margin: 0 0 0 15px;
+        margin: 0 0 0 25px;
     }
     
     .footertravel p {
@@ -220,12 +260,12 @@ hr {
         display: none;
     }
 
-      .nav {
+    .nav {
         display: inline;
         background-color: white;
     }
 
-      .nav ul {
+    .nav ul {
         list-style-type: none;
     }
     
@@ -234,26 +274,24 @@ hr {
         text-transform: uppercase;
         font-size: 14px;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
+        padding: 0 10px 0 0;
     }
     
     .nav li a {
         text-decoration: none;
         color: black;
-        padding: 5px;
     }
      
     .navright {
         float: right;
         position: relative;
         right: 30px;
+        padding: 0 10px 0 0;
     }
 
     .banner {
         display: block;
         margin: 0;
-    }
-    
-    .banner {
         background-image: url(lodging.png);
         height: 500px;
         background-position: center;
@@ -279,15 +317,18 @@ hr {
     }
     
     #middlecontent {
+        max-width: 100%;
         margin-top: -20px;
         background-color: #e6e6e6;
         height: 550px;
     }
-    
+
+    /*
     #middlecontent img {
-        max-width: 100%;
+        width: 100%;
         height: auto;
     }
+    */
 
     #bottomcontent{
         display: block;
@@ -315,21 +356,30 @@ hr {
         position: relative;
         top: 5%;
         left: 5%;
+        /*
         width: 1198px;
+        */
         display: grid;
         grid-template-columns: repeat(3, 360px);
         column-gap: 30px;
     }
 
-    .placecol3 img {
-        width: 360px;
+    .placecol1 {
+        display: grid;
+        grid-template-rows: repeat(2, 170px);
+        grid-row-gap: 15px;
+    }
+
+    .placecol2 {
+        display: grid;
+        grid-template-rows: repeat(2, 170px);
+        grid-row-gap: 15px;
     }
     
     .footertravel {
         width: 33%;
         float: left;
     }
-    
     
     .footerhost {
         width: 33%;
@@ -345,4 +395,29 @@ hr {
         color: #66b3ff;
         text-decoration: none;
     }
+
+    .footertravel p {
+        font-size: 20px;
+    }
+    
+    .footerhost p {
+        font-size: 20px;
+    }
+    
+    .footertrust p {
+        font-size: 20px;
+    }
+
+    .footertravel a {
+        font-size: 15px;
+    }
+    
+    .footerhost a {
+        font-size: 15px;
+    }
+    
+    .footertrust a {
+        font-size: 15px;
+    }
+
 }
