@@ -1,0 +1,348 @@
+.content {
+    max-width: 1278px;
+    margin: auto;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.content::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+[class*="col-"] {
+    width: 100%;
+}
+
+.nav {
+    display: flex;
+    max-width: 100%;
+    min-height: 50px;
+    background-color: grey;
+}
+
+.nav ul {
+    list-style-type: none;
+}
+
+.nav li {
+    display: inline-flex;
+    text-transform: uppercase;
+    font-size: 5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 0 25px 0 0;
+}
+
+.nav li a {
+    text-decoration: none;
+    color: white;
+}
+
+.banner {
+    display: block;
+    margin: 0 0 0 10px;
+}
+
+.banner p {
+    font-size: 13px;
+}
+
+hr {
+    margin: 0 15px 0 10px;
+}
+
+#middlecontent img {
+    max-width: 100%;
+    height: auto;
+}
+
+.middleline {
+    display: block;
+    margin: 0 0 0 10px;
+}
+
+.middleline p {
+    font-size: 13px;
+}
+
+.place {
+    margin: 0 0 0 10px;
+}
+
+#bottomcontent{
+    display: block;
+    margin: 0 0 0 10px;
+}
+
+.footertravel p {
+    font-size: 10px;
+}
+
+.footerhost p {
+    font-size: 10px;
+}
+
+.footertrust p {
+    font-size: 10px;
+}
+
+.footertravel a {
+    font-size: 5px;
+}
+
+.footerhost a {
+    font-size: 5px;
+}
+
+.footertrust a {
+    font-size: 5px;
+}
+
+@media only screen and (min-width: 768px) {
+    /* Cho máy tính bảng: */
+      .col-s-1 {width: 8.33%;}
+      .col-s-2 {width: 16.66%;}
+      .col-s-3 {width: 25%;}
+      .col-s-4 {width: 33.33%;}
+      .col-s-5 {width: 41.66%;}
+      .col-s-6 {width: 50%;}
+      .col-s-7 {width: 58.33%;}
+      .col-s-8 {width: 66.66%;}
+      .col-s-9 {width: 75%;}
+      .col-s-10 {width: 83.33%;}
+      .col-s-11 {width: 91.66%;}
+      .col-s-12 {width: 100%;}
+
+    .nav {
+        display: flex;
+        max-width: 100%;
+        background-color: grey;
+    }
+    
+    .nav ul {
+        list-style-type: none;
+    }
+    
+    .nav li {
+        display: inline-block;
+        position: relative;
+        text-transform: uppercase;
+        font-size: 10px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        padding: 0 40px 0 0;
+    }
+    
+    .nav li a {
+        text-decoration: none;
+        color: white;
+    }
+
+    .banner {
+        display: block;
+        margin: 0 0 0 15px;
+    }
+    
+    .banner p {
+        font-size: 13px;
+    }
+    
+    hr {
+        margin: 0 15px 0 15px;
+    }
+    
+    #middlecontent img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .middleline {
+        display: block;
+        margin: 0 0 0 15px;
+    }
+    
+    .middleline p {
+        font-size: 13px;
+    }
+    
+    .place {
+        margin: 0 0 0 15px; 
+    }
+    
+    #bottomcontent{
+        display: block;
+        margin: 0 0 0 15px;
+    }
+    
+    .footertravel p {
+        font-size: 15px;
+    }
+    
+    .footerhost p {
+        font-size: 15px;
+    }
+    
+    .footertrust p {
+        font-size: 15px;
+    }
+
+    .footertravel a {
+        font-size: 10px;
+    }
+    
+    .footerhost a {
+        font-size: 10px;
+    }
+    
+    .footertrust a {
+        font-size: 10px;
+    }
+}
+    
+    @media only screen and (min-width: 992px) {
+    /* Cho máy tính để bàn: */
+      .col-1 {width: 8.33%;}
+      .col-2 {width: 16.66%;}
+      .col-3 {width: 25%;}
+      .col-4 {width: 33.33%;}
+      .col-5 {width: 41.66%;}
+      .col-6 {width: 50%;}
+      .col-7 {width: 58.33%;}
+      .col-8 {width: 66.66%;}
+      .col-9 {width: 75%;}
+      .col-10 {width: 83.33%;}
+      .col-11 {width: 91.66%;}
+      .col-12 {width: 100%;}
+
+    hr {
+        display: none;
+    }
+
+      .nav {
+        display: inline;
+        background-color: white;
+    }
+
+      .nav ul {
+        list-style-type: none;
+    }
+    
+    .nav li {
+        display: inline;
+        text-transform: uppercase;
+        font-size: 14px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    
+    .nav li a {
+        text-decoration: none;
+        color: black;
+        padding: 5px;
+    }
+     
+    .navright {
+        float: right;
+        position: relative;
+        right: 30px;
+    }
+
+    .banner {
+        display: block;
+        margin: 0;
+    }
+    
+    .banner {
+        background-image: url(lodging.png);
+        height: 500px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+    }
+    
+    .bannertext {
+        color: white;
+        position: absolute;
+        top: 25%;
+        left: 10%;
+    }
+    
+    .bannertext h1 {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+    
+    .bannertext p {
+        font-size: 13px;
+        margin-top: -15px;
+    }
+    
+    #middlecontent {
+        margin-top: -20px;
+        background-color: #e6e6e6;
+        height: 550px;
+    }
+    
+    #middlecontent img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    #bottomcontent{
+        display: block;
+        margin: 0;
+    }
+
+    #bottomcontent {
+        margin-top: -20px;
+        background-color: #f2f2f2;
+        height: 180px;
+        padding: 10px 0 0 40px;
+    }
+    
+    #bottomcontent h3 {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    
+    .middleline {
+        position: relative;
+        top: 3.63%;
+        left: 5%;
+    }
+    
+    .place {
+        position: relative;
+        top: 5%;
+        left: 5%;
+        width: 1198px;
+        display: grid;
+        grid-template-columns: repeat(3, 360px);
+        column-gap: 30px;
+    }
+
+    .placecol3 img {
+        width: 360px;
+    }
+    
+    .footertravel {
+        width: 33%;
+        float: left;
+    }
+    
+    
+    .footerhost {
+        width: 33%;
+        float: left;
+    }
+    
+    .footertrust {
+        width: 33%;
+        float: left;
+    }
+    
+    .linkfooter {
+        color: #66b3ff;
+        text-decoration: none;
+    }
+}
