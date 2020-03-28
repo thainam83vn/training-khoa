@@ -1,196 +1,213 @@
 .content {
-    max-width: 1278px;
-    margin: auto;
+  max-width: 1278px;
+  margin: auto;
 }
 
-*{
-    box-sizing: border-box;
+* {
+  box-sizing: border-box;
 }
 
 .content::after {
-    content: "";
-    clear: both;
-    display: table;
+  content: "";
+  clear: both;
+  display: table;
 }
 
 [class*="col-"] {
-    width: 100%;
+  width: 100%;
 }
 
 img {
-    max-width: 100%;
-    height: auto;
+  max-width: 100%;
+  height: auto;
 }
 
 .nav {
-    display: flex;
-    max-width: 100%;
-    min-height: 50px;
-    background-color: grey;
+  display: flex;
+  max-width: 100%;
+  min-height: 50px;
+  background-color: grey;
 }
 
 .nav ul {
-    list-style-type: none;
+  list-style-type: none;
 }
 
 .nav li {
-    display: inline-flex;
-    text-transform: uppercase;
-    font-size: 5px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    padding: 0 35px 0 0;
+  display: inline-flex;
+  text-transform: uppercase;
+  font-size: 5px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding: 0 35px 0 0;
 }
 
 .nav li a {
-    text-decoration: none;
-    color: white;
+  text-decoration: none;
+  color: white;
 }
 
 .banner {
-    display: block;
-    margin: 0 0 0 10px;
+  display: block;
+  margin: 0 0 0 10px;
 }
 
 .banner p {
-    font-size: 13px;
+  font-size: 13px;
 }
 
 hr {
-    margin: 0 15px 0 10px;
+  margin: 0 15px 0 10px;
 }
 
 #middlecontent img {
-    max-width: 100%;
-    height: auto;
+  max-width: 100%;
+  height: auto;
 }
 
 .middleline {
-    display: block;
-    margin: 0 0 0 10px;
+  display: block;
+  margin: 0 0 0 10px;
 }
 
 .middleline p {
-    font-size: 13px;
+  font-size: 13px;
 }
 
 .place {
-    margin: 0 0 0 10px;
+  margin: 0 0 0 10px;
 }
 
-.place img {
-    padding: 5px 0 5px 0;
-}
-
-#bottomcontent{
-    display: block;
-    margin: 0 0 0 10px;
+#bottomcontent {
+  display: block;
+  margin: 0 0 0 10px;
 }
 
 .footertravel p {
-    font-size: 10px;
+  font-size: 10px;
 }
 
 .footerhost p {
-    font-size: 10px;
+  font-size: 10px;
 }
 
 .footertrust p {
-    font-size: 10px;
+  font-size: 10px;
 }
 
 .footertravel a {
-    font-size: 5px;
+  font-size: 5px;
 }
 
 .footerhost a {
-    font-size: 5px;
+  font-size: 5px;
 }
 
 .footertrust a {
-    font-size: 5px;
+  font-size: 5px;
 }
 
 @media only screen and (min-width: 768px) {
-    /* Cho máy tính bảng: */
-      .col-s-1 {width: 8.33%;}
-      .col-s-2 {width: 16.66%;}
-      .col-s-3 {width: 25%;}
-      .col-s-4 {width: 33.33%;}
-      .col-s-5 {width: 41.66%;}
-      .col-s-6 {width: 50%;}
-      .col-s-7 {width: 58.33%;}
-      .col-s-8 {width: 66.66%;}
-      .col-s-9 {width: 75%;}
-      .col-s-10 {width: 83.33%;}
-      .col-s-11 {width: 91.66%;}
-      .col-s-12 {width: 100%;}
+  /* Cho máy tính bảng: */
+  .col-s-1 {
+    width: 8.33%;
+  }
+  .col-s-2 {
+    width: 16.66%;
+  }
+  .col-s-3 {
+    width: 25%;
+  }
+  .col-s-4 {
+    width: 33.33%;
+  }
+  .col-s-5 {
+    width: 41.66%;
+  }
+  .col-s-6 {
+    width: 50%;
+  }
+  .col-s-7 {
+    width: 58.33%;
+  }
+  .col-s-8 {
+    width: 66.66%;
+  }
+  .col-s-9 {
+    width: 75%;
+  }
+  .col-s-10 {
+    width: 83.33%;
+  }
+  .col-s-11 {
+    width: 91.66%;
+  }
+  .col-s-12 {
+    width: 100%;
+  }
 
+  .nav {
+    display: inline-block;
+    width: 100%;
+    background-color: grey;
+    margin: 0;
+  }
 
-    .nav {
-        display: inline-block;
-        width: 100%;
-        background-color: grey;
-        margin: 0;
-    }
+  .nav ul {
+    list-style-type: none;
+  }
 
-    .nav ul {
-        list-style-type: none;
-    }
-    
-    .nav li {
-        display: inline;
-        text-transform: uppercase;
-        font-size: 10px;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        padding: 0 5px 0 0;
-    }
-    
-    .nav li a {
-        text-decoration: none;
-        color: black;
-    }
+  .nav li {
+    display: inline;
+    text-transform: uppercase;
+    font-size: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 0 5px 0 0;
+  }
 
-    .navright {
-        float: right;
-        position: relative;
-        padding: 4px 5px 0 0;
-        right: 30px;
-    }
+  .nav li a {
+    text-decoration: none;
+    color: white;
+  }
 
-    .banner {
-        display: block;
-        margin: 0 0 0 15px;
-    }
-    
-    .banner p {
-        font-size: 13px;
-    }
-    
-    hr {
-        margin: 0 15px 0 15px;
-    }
-    
-    #middlecontent {
-        max-width: 100%;
-        height: auto;
-    }
+  .navright {
+    float: right;
+    position: relative;
+    padding: 4px 5px 0 0;
+    right: 30px;
+  }
 
-    .middleline {
-        display: block;
-        margin: 0 0 0 15px;
-    }
-    
-    .middleline p {
-        font-size: 13px;
-    }
+  .banner {
+    display: block;
+    margin: 0 0 0 15px;
+  }
 
+  .banner p {
+    font-size: 13px;
+  }
+
+  hr {
+    margin: 0 15px 0 15px;
+  }
+
+  #middlecontent {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .middleline {
+    display: block;
+    margin: 0 0 0 15px;
+  }
+
+  .middleline p {
+    font-size: 13px;
+  }
+
+  /*
     .place {
         position: relative;
         top: 2.5%;
         left: 2.5%;
-        /*
-        width: 1198px;
-        */
         display: grid;
         grid-template-columns: repeat(2, 360px);
         column-gap: 20px;
@@ -198,226 +215,253 @@ hr {
         row-gap: 10px;
         margin: 0;
     }
-
-    .placecol1 {
-        display: grid;
-        grid-template-rows: repeat(2, 170px);
-        grid-row-gap: 15px;
-    }
-
-    .placecol2 {
-        display: grid;
-        grid-template-rows: repeat(2, 170px);
-        grid-row-gap: 15px;
-    }
-    
-    #bottomcontent{
-        display: block;
-        margin: 0 0 0 25px;
-    }
-    
-    .footertravel p {
-        font-size: 15px;
-    }
-    
-    .footerhost p {
-        font-size: 15px;
-    }
-    
-    .footertrust p {
-        font-size: 15px;
-    }
-
-    .footertravel a {
-        font-size: 10px;
-    }
-    
-    .footerhost a {
-        font-size: 10px;
-    }
-    
-    .footertrust a {
-        font-size: 10px;
-    }
-}
-    
-    @media only screen and (min-width: 992px) {
-    /* Cho máy tính để bàn: */
-      .col-1 {width: 8.33%;}
-      .col-2 {width: 16.66%;}
-      .col-3 {width: 25%;}
-      .col-4 {width: 33.33%;}
-      .col-5 {width: 41.66%;}
-      .col-6 {width: 50%;}
-      .col-7 {width: 58.33%;}
-      .col-8 {width: 66.66%;}
-      .col-9 {width: 75%;}
-      .col-10 {width: 83.33%;}
-      .col-11 {width: 91.66%;}
-      .col-12 {width: 100%;}
-
-    hr {
-        display: none;
-    }
-
-    .nav {
-        display: inline;
-        background-color: white;
-    }
-
-    .nav ul {
-        list-style-type: none;
-    }
-    
-    .nav li {
-        display: inline;
-        text-transform: uppercase;
-        font-size: 14px;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        padding: 0 10px 0 0;
-    }
-    
-    .nav li a {
-        text-decoration: none;
-        color: black;
-    }
-     
-    .navright {
-        float: right;
-        position: relative;
-        right: 30px;
-        padding: 0 10px 0 0;
-    }
-
-    .banner {
-        display: block;
-        margin: 0;
-        background-image: url(lodging.png);
-        height: 500px;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        position: relative;
-    }
-    
-    .bannertext {
-        color: white;
-        position: absolute;
-        top: 25%;
-        left: 10%;
-    }
-    
-    .bannertext h1 {
-        font-family: Georgia, 'Times New Roman', Times, serif;
-    }
-    
-    .bannertext p {
-        font-size: 13px;
-        margin-top: -15px;
-    }
-    
-    #middlecontent {
-        max-width: 100%;
-        margin-top: -20px;
-        background-color: #e6e6e6;
-        height: 550px;
-    }
-
-    /*
-    #middlecontent img {
-        width: 100%;
-        height: auto;
-    }
     */
 
-    #bottomcontent{
-        display: block;
-        margin: 0;
-    }
+  .place {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 
-    #bottomcontent {
-        margin-top: -20px;
-        background-color: #f2f2f2;
-        height: 180px;
-        padding: 10px 0 0 40px;
-    }
-    
-    #bottomcontent h3 {
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    }
-    
-    .middleline {
-        position: relative;
-        top: 3.63%;
-        left: 5%;
-    }
-    
+  .placecol1 {
+    display: grid;
+    grid-template-rows: repeat(2, 165px);
+    row-gap: 40px;
+  }
+
+  .placecol2 {
+    display: grid;
+    grid-template-rows: repeat(2, 165px);
+    row-gap: 40px;
+  }
+
+  #bottomcontent {
+    display: block;
+    margin: 0 0 0 25px;
+  }
+
+  .footertravel p {
+    font-size: 15px;
+  }
+
+  .footerhost p {
+    font-size: 15px;
+  }
+
+  .footertrust p {
+    font-size: 15px;
+  }
+
+  .footertravel a {
+    font-size: 10px;
+  }
+
+  .footerhost a {
+    font-size: 10px;
+  }
+
+  .footertrust a {
+    font-size: 10px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  /* Cho máy tính để bàn: */
+  .col-1 {
+    width: 8.33%;
+  }
+  .col-2 {
+    width: 16.66%;
+  }
+  .col-3 {
+    width: 25%;
+  }
+  .col-4 {
+    width: 33.33%;
+  }
+  .col-5 {
+    width: 41.66%;
+  }
+  .col-6 {
+    width: 50%;
+  }
+  .col-7 {
+    width: 58.33%;
+  }
+  .col-8 {
+    width: 66.66%;
+  }
+  .col-9 {
+    width: 75%;
+  }
+  .col-10 {
+    width: 83.33%;
+  }
+  .col-11 {
+    width: 91.66%;
+  }
+  .col-12 {
+    width: 100%;
+  }
+
+  hr {
+    display: none;
+  }
+
+  .nav {
+    display: inline;
+    background-color: white;
+  }
+
+  .nav ul {
+    list-style-type: none;
+  }
+
+  .nav li {
+    display: inline;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 0 10px 0 0;
+  }
+
+  .nav li a {
+    text-decoration: none;
+    color: black;
+  }
+
+  .navright {
+    float: right;
+    position: relative;
+    right: 30px;
+    padding: 0 10px 0 0;
+  }
+
+  .banner {
+    display: block;
+    margin: 0;
+    background-image: url(lodging.png);
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+
+  .bannertext {
+    color: white;
+    position: absolute;
+    top: 25%;
+    left: 10%;
+  }
+
+  .bannertext h1 {
+    font-family: Georgia, "Times New Roman", Times, serif;
+  }
+
+  .bannertext p {
+    font-size: 13px;
+    margin-top: -15px;
+  }
+
+  #middlecontent {
+    max-width: 100%;
+    margin-top: -20px;
+    background-color: #e6e6e6;
+    height: 550px;
+    padding-left: 5%;
+  }
+
+  #bottomcontent {
+    display: block;
+    margin: 0;
+  }
+
+  #bottomcontent {
+    margin-top: -20px;
+    background-color: #f2f2f2;
+    height: 180px;
+    padding: 10px 0 0 40px;
+  }
+
+  #bottomcontent h3 {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  .middleline {
+    position: relative;
+    top: 3.63%;
+  }
+
+  /*
     .place {
         position: relative;
         top: 5%;
         left: 5%;
-        /*
-        width: 1198px;
-        */
         display: grid;
         grid-template-columns: repeat(3, 360px);
         column-gap: 30px;
+        width: 100%;
     }
+    */
 
-    .placecol1 {
-        display: grid;
-        grid-template-rows: repeat(2, 170px);
-        grid-row-gap: 15px;
-    }
+  .place {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 2.5%;
+  }
 
-    .placecol2 {
-        display: grid;
-        grid-template-rows: repeat(2, 170px);
-        grid-row-gap: 15px;
-    }
-    
-    .footertravel {
-        width: 33%;
-        float: left;
-    }
-    
-    .footerhost {
-        width: 33%;
-        float: left;
-    }
-    
-    .footertrust {
-        width: 33%;
-        float: left;
-    }
-    
-    .linkfooter {
-        color: #66b3ff;
-        text-decoration: none;
-    }
+  .placecol1 {
+    display: grid;
+    grid-template-rows: repeat(2, 165px);
+  }
 
-    .footertravel p {
-        font-size: 20px;
-    }
-    
-    .footerhost p {
-        font-size: 20px;
-    }
-    
-    .footertrust p {
-        font-size: 20px;
-    }
+  .placecol2 {
+    display: grid;
+    grid-template-rows: repeat(2, 165px);
+  }
 
-    .footertravel a {
-        font-size: 15px;
-    }
-    
-    .footerhost a {
-        font-size: 15px;
-    }
-    
-    .footertrust a {
-        font-size: 15px;
-    }
+  .footertravel {
+    width: 33%;
+    float: left;
+  }
 
+  .footerhost {
+    width: 33%;
+    float: left;
+  }
+
+  .footertrust {
+    width: 33%;
+    float: left;
+  }
+
+  .linkfooter {
+    color: #66b3ff;
+    text-decoration: none;
+  }
+
+  .footertravel p {
+    font-size: 20px;
+  }
+
+  .footerhost p {
+    font-size: 20px;
+  }
+
+  .footertrust p {
+    font-size: 20px;
+  }
+
+  .footertravel a {
+    font-size: 15px;
+  }
+
+  .footerhost a {
+    font-size: 15px;
+  }
+
+  .footertrust a {
+    font-size: 15px;
+  }
 }
